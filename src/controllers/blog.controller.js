@@ -164,9 +164,6 @@ exports.deleteBlogPost = (req, res, next) => {
 }
 
 const removeImage = (filePath) => {
-    console.log('filePath', filePath)
-    console.log('dir name', __dirname )
-
     //mencari letak posisi filepath
     filePath = path.join(__dirname, '../..', filePath)
     //meremove filepath
